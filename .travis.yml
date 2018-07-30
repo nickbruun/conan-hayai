@@ -3,7 +3,7 @@ env:
      - CONAN_USERNAME: "nickbruun"
      - CONAN_CHANNEL: "testing"
      - CONAN_UPLOAD: "https://api.bintray.com/conan/nickbruun/conan"
-     - CONAN_UPLOAD_ONLY_WHEN_STABLE: 1 # Will only upload when the branch matches "release/*"
+     - CONAN_UPLOAD_ONLY_WHEN_STABLE: 1
      - CONAN_DOCKER_32_IMAGES: 1
 
 linux: &linux
@@ -56,4 +56,4 @@ install:
 
 script:
   - chmod +x .travis/run.sh
-- ./.travis/run.sh
+  - ./.travis/run.sh
